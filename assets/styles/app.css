@@ -1,0 +1,8 @@
+turbo-frame {
+    display: block;
+    border: 1px solid red;
+}
+
+[data-controller="symfony--ux-turbo-mercure--turbo-stream"] {
+    border: 1px solid blue;
+}
