@@ -19,3 +19,7 @@ Disclaimer: The code doesn't always adhere to best practices, in favor of keepin
 3. Open up `127.0.0.1:8000/rooms` to get started!
 
 > NOTE: It has to be `127.0.0.1:8000`. Anything else (even `localhost:8000`) will result in CORS errors when attempting to connect to the Mercure Hub.
+
+## Notes
+
+Turbo Frames are given red borders while Turbo Streams are given blue borders to better identify them.
