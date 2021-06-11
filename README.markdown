@@ -8,17 +8,18 @@ Disclaimer: The code doesn't always adhere to best practices, in favor of keepin
 
 ## Requirements
 
-- PHP 8.0
+- PHP 8.0 (with SQLite drivers)
 - Node + Yarn
-- Symfony CLI
+- Symfony CLI (with TLS support for the local web server)
 
 ## Setup
 
 1. Install dependencies: `composer install` & `yarn`
-2. Run `make start` to start the dev server and Webpack Encore.
-3. Open up `127.0.0.1:8000/rooms` to get started!
+2. Create the database with the matching schema: `symfony doctrine:schema:update --force`
+3. Run `make start` to start the dev server and Webpack Encore.
+4. Open up `https://127.0.0.1:8000/rooms` to get started!
 
-> NOTE: It has to be `127.0.0.1:8000`. Anything else (even `localhost:8000`) will result in CORS errors when attempting to connect to the Mercure Hub.
+> NOTE: It has to be `https://127.0.0.1:8000`. Anything else (even `localhost:8000`) will result in CORS errors when attempting to connect to the Mercure Hub.
 
 ## Notes
 
