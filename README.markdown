@@ -15,7 +15,7 @@ Disclaimer: The code doesn't always adhere to best practices, in favor of keepin
 ## Setup
 
 1. Install dependencies: `composer install` & `yarn`
-2. Create the database with the matching schema: `symfony doctrine:schema:update --force`
+2. Create the database with the matching schema: `bin/console doctrine:schema:update --force`
 3. Run `make start` to start the dev server and Webpack Encore.
 4. Open up `https://127.0.0.1:8000/rooms` to get started!
 
